@@ -1,0 +1,12 @@
+
+type Message {
+    content: String!
+}
+
+type Query {
+    getMessage(userId: ID!): [Message]!
+}
+
+type Mutation {
+    sendMessage(userId: ID!, msg: String!): Boolean
+}
